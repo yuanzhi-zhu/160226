@@ -8,26 +8,59 @@
     <link rel="icon" type="image/jpg" href="../images/160226.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BUAA 160226</title>
+
+    <style>
+        .personal_information {
+            display: inline-block;
+            width: 800px;
+        }
+        
+        .personal_information .imgs {
+            display: inline-block;
+            vertical-align: middle;
+            width: 300px;
+            top: 20px;
+            height: 420px;
+        }
+        
+        .personal_information .infos {
+            display: inline-block;
+            text-align: center;
+            position: fixed;
+            width: 450px;
+            top: 75px;
+            left: 550px;
+            height: 420px;
+        }
+    </style>
+
 </head>
 
 <body>
-
     <div id="wrapper" class="typo">
         <a href="index.html">花名册</a>
-        <div class="personal information">
-            <div class="column one-third">
-                <img src="160226\classmate\images\zhuyuanzhi\selfie.png" />
+
+        <div class="personal_information">
+            <div class="imgs"><img src="{{ page.selfie }}" width="300"></div>
+            <div class="infos">
+                <br />
+                <h1 style="text-align:center">{{ page.classmatename }}</h1>
+                <h2 style="text-align:center">{{ page.studentNum }}</h2>
+                <h2 style="text-align:center">{{ page.wechatID }}</h2>
+
+                <br />
+                <blockquote style="position: absolute; bottom: 20px; margin: auto; left: 0; right: 0;">
+                    {{ page.slogan }}
+                </blockquote>
+
             </div>
-            <div class="column two-third">
-                <h3 style="text-align:center">{{ page.classmatename }}</h3>
-                <h3 style="text-align:center">{{ page.studentNum }}</h3>
-                <h3 style="text-align:center">{{ page.wechatID }}</h3>
-                <h3 style="text-align:center">{{ page.slogan }}</h3>
-            </div>
-        </div><br> {{ content }}
+        </div>
+
+        <br> {{ content }}
         <br />
         <a href="index.html" class="footer">Go to Table of Contents</a>
+    </div>
 </body>
-</div>
+
 
 </html>
