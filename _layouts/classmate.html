@@ -13,9 +13,18 @@
 <body>
 
     <div id="wrapper" class="typo">
-
         <a href="index.html">花名册</a>
-        <h1 style="text-align:center">{{ page.title }}</h1><br> {{ content }}
+        <div class="personal information">
+            <div class="column one-third">
+                <img src="\classmate\images\zhuyuanzhi\selfie.png" />
+            </div>
+            <div class="column two-third">
+                <h3 style="text-align:center">{{ page.classmatename }}</h3>
+                <h3 style="text-align:center">{{ page.studentNum }}</h3>
+                <h3 style="text-align:center">{{ page.wechatID }}</h3>
+                <h3 style="text-align:center">{{ page.slogan }}</h3>
+            </div>
+        </div><br> {{ content }}
         <br />
         <a href="index.html" class="footer">Go to Table of Contents</a>
 </body>
