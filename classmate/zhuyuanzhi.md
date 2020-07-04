@@ -22,4 +22,4 @@ selfie: ..\classmate\images\zhuyuanzhi\selfie.png
 <style> table td:nth-child(2) { text-align:center; vertical-align: middle; } </style>
 
 | ---- | --- |
-| ![drama](../images/zhuyuanzhi/drama.jpg){:width="100%"}  | 大一时候参加的话剧演出 |
+| ![drama](../classmate/images/zhuyuanzhi/drama.jpg){:width="100%"}  | 大一时候参加的话剧演出 |
