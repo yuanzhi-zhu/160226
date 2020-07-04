@@ -9,28 +9,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BUAA 160226</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
     <style>
         .personal_information {
             display: inline-block;
-            width: 800px;
+            width: 100%;
+            height: 0;
+            padding-bottom: 60%;
         }
         
         .personal_information .imgs {
             display: inline-block;
             vertical-align: middle;
-            width: 300px;
-            top: 20px;
-            height: 420px;
+            position: relative;
+            width: 40%;
+            top: 7%;
         }
         
         .personal_information .infos {
             display: inline-block;
             text-align: center;
-            position: fixed;
-            width: 450px;
-            top: 75px;
-            left: 550px;
-            height: 420px;
+            position: relative;
+            width: 58%;
+            left: 2%;
+            height: 0;
+            padding-bottom: 50%;
+            top: 0;
         }
     </style>
 
@@ -41,7 +46,7 @@
         <a href="index.html">花名册</a>
 
         <div class="personal_information">
-            <div class="imgs"><img src="{{ page.selfie }}" width="300"></div>
+            <div class="imgs"><img src="{{ page.selfie }}" width=100%; height=auto;></div>
             <div class="infos">
                 <br />
                 <h1 style="text-align:center">{{ page.classmatename }}</h1>
