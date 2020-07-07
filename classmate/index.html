@@ -13,8 +13,19 @@
         <div class="contents">
             <h1 class="title">BUAA 160226集体回忆</h1>
             <h2 class="title">花 &nbsp; 名 &nbsp; 册</h2>
+            <!--
             <ul>
-                <li> <a href="zhuyuanzhi">朱元治</a> </li>
+                {% for post in site.classmate %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            -->
+            <ul>
+                <li>
+                    <a style=" color:rgb(0, 119, 255); font-size:2em;" ; color href="zhuyuanzhi">朱元治</a>
+                </li>
             </ul>
         </div>
     </div>

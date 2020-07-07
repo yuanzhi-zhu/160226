@@ -4,8 +4,9 @@ title: 朱元治
 studentNum: 16021110
 classmatename: 朱元治
 wechatID: yuanzhi_zhu
+tel: 18811366369
 slogan: 成长的时光里遇到了你们
-selfie: ..\classmate\images\zhuyuanzhi\selfie.png
+selfie: /classmate/images/zhuyuanzhi/selfie.png
 ---
 
 
@@ -22,4 +23,10 @@ selfie: ..\classmate\images\zhuyuanzhi\selfie.png
 <style> table td:nth-child(2) { text-align:center; vertical-align: middle; } </style>
 
 | ---- | --- |
-| ![drama](../../160226/classmate/images/zhuyuanzhi/drama.jpg){:width="100%"}  | 大一时候参加的话剧演出 |
+| ![drama]({{ site.url }}/classmate/images/zhuyuanzhi/drama.jpg){:width="100%"}  | 大一时候参加的话剧演出 |
+
+<!-- 
+../../160226
+-->
+
+------------
